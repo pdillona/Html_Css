@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>3.CSS구조 선택자</title>
+         <!-- 
+            날짜: 2023/07/04
+            이름: 정영재
+            내용: CSS 구조 선택자 실습하기  
+
+         -->
+
+         <style>
+            /*구조 선택자*/
+
+            .city > li:first-child{
+                color: rgb(98, 98, 158);
+
+            }
+            .city > li:nth-child(2) { /*index 넘버 X 순서번호,  second 없음 */
+                color: darkgreen;
+
+            }
+            .city > li:nth-child(3) { 
+                color: deeppink ;
+
+            }
+            .city > em:nth-child(6){/*em의 첫째라고 1이아닌 내부순서 */
+                background-color: yellow;
+            }
+            .city > em:nth-of-type(2){  /*nth of type은 해당 태그의 순서*/
+                background-color: springgreen;
+            }
+            
+            ul:nth-child(3)> li:nth-child(2){ /*nth of type 아니라서 h3 ul city 다음 ul이니 3번째가 맞다.*/
+                background-color: aqua;
+            }
+
+         </style>
+
+    </head>
+
+    <body>
+        <h3>구조선택자</h3>
+
+        <ul class="city">
+            <li> 서울</li>
+            <li> 부산</li>
+            <li> 대전</li>
+            <li> 대구</li>
+            <li> 광주</li>
+            <em> 인천</em>
+            <em> 울산</em>
+            <em> 세종</em>
+
+        </ul>
+
+        <ul>
+            <li> 한국</li>
+            <li> 미국</li>
+            <li> 일본</li>
+            <li> 중국</li>
+            <li> 호주</li>
+        </ul>
+
+
+
+
+    </body>
+
+</html>
