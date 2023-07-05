@@ -2,13 +2,13 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>3.CSS구조 선택자</title>
-         <!-- 
-            날짜: 2023/07/04
-            이름: 정영재
-            내용: CSS 구조 선택자 실습하기  
+        <!-- 
+           날짜: 2023/07/04
+           이름: 정영재
+           내용: CSS 구조 선택자 실습하기  
 
-         -->
+        -->
+        <title>3.CSS구조 선택자</title>
 
          <style>
             /*구조 선택자*/
@@ -25,7 +25,7 @@
                 color: deeppink ;
 
             }
-            .city > em:nth-child(6){/*em의 첫째라고 1이아닌 내부순서 */
+            .city > em:nth-child(6){/*child는 내부순서 전체중 n번째(태그의 종류에 순서를 구애받지 않음)*/
                 background-color: yellow;
             }
             .city > em:nth-of-type(2){  /*nth of type은 해당 태그의 순서*/
