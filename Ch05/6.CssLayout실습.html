@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>06.layout실습</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            ol, ul{
+               list-style: none;
+            }
+            a{
+                text-decoration: none; color: black;
+            }
+            #container{
+                width: 860px;
+                height: auto;
+                padding: 10px;
+                margin: 0 auto;
+                box-sizing: border-box;
+                background: #aaa;
+
+            }
+            header{
+                width: 100%;
+                height: 100px;
+                background-color: #ccc;
+
+            }
+            main{
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+                background-color: #ccc;
+                margin: 10px 0;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            main>aside:nth-child(2){
+                width: 200px;
+                height: 400px;
+                background-color: #fff;
+                float: left;
+             
+            }
+            main>aside:nth-child(3){
+                width: 200px;
+                height: 400px;
+                background-color: #fff;
+                float: left;
+                padding: 10px;
+                margin-left: 10px;
+                box-sizing: border-box;
+            }
+            main>section{
+                width: 400px;
+                height: 400px;
+                background-color: #fff;
+                float: right;
+                padding: 10px;
+                margin-left: 10px;
+                box-sizing: border-box;
+            }
+            footer{
+                width: 100%;
+                height: 100px;
+                background-color: #ccc;
+
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h3>header</h3>
+            </header>
+            <main>
+                <h3>main</h3>
+                <aside>
+                    <h3>aside #1</h3>
+                </aside>
+                <aside>
+                    <h3>aside #2</h3>
+                </aside>
+                <section>
+                    <h3>section</h3>
+                </section>
+            </main>
+            <footer>
+                <h3>footer</h3>
+            </footer>
+
+        </div>
+
+
+    </body>
+
+
+</html>
