@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Roboto:wght@100&display=swap');
+
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, ol{
+    list-style: none;
+}
+a {text-decoration: none; color: black;}
+
+#container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background: #0077CC;
+}
+header> .logo{
+    float: left;
+    font-family: 'Merienda', cursive;
+    color: #fff;
+    text-shadow: 0 -1px 0 #222;
+    font-size: 20px;
+    margin: 16px;
+    }
+header>nav{
+    position: relative;
+    float: right;
+    width: 900px;
+    height: 100px;
+                    
+}
+header> nav> ul{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+header> nav> ul> li{
+    float: left;
+    width: 200px;
+    height: 60px;
+    
+    
+}
+header> nav> ul> li> a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+header> nav> ul> li> a:hover{
+    color: black;
+}
+header > nav> ul span{
+    margin-left: 10px;
+    font-size: 12px;
+}
+header> nav ol{
+    display: none;
+}
+header> nav ol>li{
+
+}
+header> nav ol> li> a{
+
+}
+
+main{
+    width: 100%;
+    height: auto;
+               }
+#slideshow{
+    position: relative;
+    width: 100%;
+    height: 300px;
+            }
+#slideshow> section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    }
+#slideshow> section> img{
+    position: absolute;
+}            
+#slideshow> section> img:nth-child(1){left:0; top:0;}
+#slideshow> section> img:nth-child(2){left: 100%; top: 0;}
+#slideshow> section> img:nth-child(3){left: 200%; top: 0;}
+#slideshow> button{
+    position: absolute;
+    padding: 20px;
+    height: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    }
+#slideshow>  button.left{left: 0; top: 0;}
+#slideshow>  button.right{right: 0; top: 0;}
+
+#slideshow> button:hover{
+    background-color: #222;
+    opacity: 0.5;
+    cursor: pointer;
+    color: #fff;
+}
+
+#contents{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+#tabMenu{
+    float: left;
+    width: 600px;
+    height: 300px;
+    padding-top: 20px;
+}
+#tabMenu > label{
+    display: inline-block;
+    padding: 15px 25px;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    color: #aaa;
+    font-weight: bold;
+    cursor: pointer;
+}
+#tabMenu > label > input[type= radio]{
+    display: none;
+}
+#tabMenu > label:first-child{
+    color: #bb0000;
+}
+#tabMenu> section{
+    position: relative;
+    width: 100%;
+    height: 246px;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+}
+#tabMenu> section>article {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#tabMenu> section>article.on{display: block;}
+#tabMenu> section ul {
+    list-style: disc; 
+    margin-left: 36px;
+    margin-top: 26px;
+
+}
+#tabMenu> section ul> li {
+    margin-bottom: 12px;
+}
+#tabMenu> section ul a {
+    font-size: 16px;
+
+
+}
+#tabMenu> section ol {}
+#tabMenu> section ol> li {}
+#tabMenu> section ol a {}
+#tabMenu> section ol img {}
+#links{
+    float: left;
+    width: 600px;                    
+    height: 300px;
+
+                }
+#links > ul{
+    width: 100%;
+    height: 100%;
+}
+#links > ul> li{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+#links > ul> li> a{}
+#links > ul span{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 150px;
+    margin: 26px auto;
+}
+#links > ul span.icon1{background-image: url(../imges/icon-1.jpg);}
+#links > ul span.icon2{background-image: url(../imges/icon-2.jpg);}
+#links > ul span.icon3{background-image: url(../imges/icon-3.jpg);}
+
+#links > ul h3{
+    text-align: center;
+    font-size: 16px;
+}
+
+footer{
+  
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid black ;
+
+           }
+
+#bottomMenu{
+    width: 100%;
+    height: 20px;
+    
+
+
+}
+
+#bottomMenu>ul{ 
+    position: relative;
+    width: 1200px;
+    height: 0px;
+    margin-top: 15px;
+    
+}
+#bottomMenu> ul> li{
+
+    display: inline-block;
+    width: auto;
+    height: 31px;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    
+
+}
+
+
+footer> div> ul> li > a{
+    font-size: 15px;
+    color: #666;
+
+}
+
+
+#sns{
+    width: 120px;
+    height: 60px;
+    float: right;
+}
+
+#sns> ul {
+    width: 120px;
+    margin-top: 15px;
+    
+    
+   
+
+}
+#sns> ul> li{
+
+   
+
+}
+#sns> ul> li:nth-child(1){
+    float: left;
+    padding: 5px;
+}
+#sns> ul> li:nth-child(2){
+    float: left;
+    padding: 5px;
+}
+#sns> ul> li:nth-child(3){
+    float: left;
+    padding: 5px;
+}
+
+           
+#company{
+    display: block;
+    
+}
+#company> p{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 20px;
+    float: left;
+    font-size: 14px;
+    color: #aaa;
+}
+           
+
+
