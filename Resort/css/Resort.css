@@ -26,7 +26,7 @@
     width: 100%;
     height: 100px;
     background-color: #fefefe;
-    background-image: url("../imges/header_bg.png");
+    background-image: url("../img/header_bg.png");
     background-repeat: repeat-x;
     background-position: bottom;
   }
@@ -230,7 +230,7 @@
     width: 1000px;
     height: 620px;
     margin: 0 auto;
-    background: url("../imges/main_fade_bg1.png");
+    background: url("../img/main_bg.png");
   }
   
   /*
@@ -259,7 +259,7 @@
     height: 200px;
     left: 0;
     top: 0;
-    background: url("../imges/main_box1_bg.png");
+    background: url("../img/main_box1_bg.png");
   }
   
   #content > .mama > #article > div:nth-child(2) {
@@ -271,7 +271,7 @@
     height: 200px;
     left: 200px;
     top: 0;
-    background: url("../imges/main_box2_bg.png");
+    background: url("../img/main_box2_bg.png");
   }
   
   #content > .mama > #article > div:nth-child(3) {
@@ -280,7 +280,7 @@
     left: 400px;
     top: 0;
     position: absolute;
-    background: url("../imges/main_box3_bg.png");
+    background: url("../img/main_box3_bg.png");
     text-align: center;
     padding-top: 30px;
     box-sizing: border-box;
@@ -299,7 +299,7 @@
     left: 600px;
     top: 0;
     position: absolute;
-    background: url("../imges/main_box4_bg.png");
+    background: url("../img/main_box4_bg.png");
     text-align: left;
     padding-top: 30px;
     box-sizing: border-box;
@@ -311,7 +311,7 @@
     left: 0;
     top: 200px;
     position: absolute;
-    background: url("../imges/main_box5_bg.png");
+    background: url("../img/main_box5_bg.png");
     padding-top: 30px;
     box-sizing: border-box;
   }
@@ -319,7 +319,7 @@
   #content > .mama > #article > div:nth-child(5) {
     width: 200px;
     height: 200px;
-    background: url("../imges/main_box5_bg.jpg") no-repeat;
+    background: url("../img/main_box5_bg.jpg") no-repeat;
     position: absolute;
     top: 200px;
   }
@@ -332,7 +332,7 @@
   #content > .mama > #article > div:nth-child(6) {
     width: 200px;
     height: 200px;
-    background: url("../imges/main_box6_bg.jpg") no-repeat;
+    background: url("../img/main_box6_bg.jpg") no-repeat;
     position: absolute;
     top: 200px;
     left: 200px;
@@ -345,7 +345,7 @@
   #content > .mama > #article > div:nth-child(7) {
     width: 200px;
     height: 200px;
-    background: url("../imges/main_box7_bg.png");
+    background: url("../img/main_box7_bg.png");
     position: absolute;
     top: 400px;
     left: 200px;
@@ -457,7 +457,7 @@
   #subMain > div > div {
     width: 1000px;
     height: 116px;
-    background: url("../imges/sub_top_img.png");
+    background: url("../img/sub_top_img.png");
   }
   
   #subMain section {
@@ -559,7 +559,7 @@
     left: 35px;
     width: 765px;
     height: 100%;
-    background: url("../imges/sub1_menu1_bg.jpg") no-repeat;
+    background: url("../img/sub1_menu1_bg.jpg") no-repeat;
   }
   
   #sub2 > img:nth-child(1) {
