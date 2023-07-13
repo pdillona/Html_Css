@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>EcoLayOut</title>
+        <style>
+            /*초기화*/
+            *{margin: 0; padding: 0;}
+            ol,ul{list-style: none;}
+            a{text-decoration: none; color: black;}
+            section{display: block;}
+            nav{display: block;}
+            .wrapper{
+                width: 100%;
+                height: 100%;
+                border: 1px solid red;
+                box-sizing: border-box;
+            }
+  
+            /*헤더*/
+            header{
+                width: 100%;
+                height: auto;
+                border: 1px solid blue;
+                box-sizing: border-box;
+            }
+            header> div{
+                width: 100%;
+                border: 1px solid green;
+                box-sizing: border-box;
+            }
+            header> div:nth-child(1){
+                height: 44px;
+            }
+            header> div:nth-child(2){
+                height: 110px;
+            }
+            header> div:nth-child(3){
+                height: 46px;
+            }
+            header> div> *{
+                width: 1126px;
+                height: 100%;
+                margin: 0 auto;
+                border: 1px solid orange;
+                box-sizing: border-box;
+            }
+
+            /*메인*/
+            main{
+                width: 100%;
+                height: auto;
+                border: 1px solid blue;
+                box-sizing: border-box;
+            }
+
+            section{
+                width: 100% ;
+                height: 480px ;
+                border: 1px solid green;
+                box-sizing: border-box;
+                padding: 40px 0px;
+            }
+
+            main> section> article{
+                width: 1126px;
+                height: 100%;
+                border: 1px solid orange;
+                box-sizing: border-box;
+                margin: 0 auto;           
+            }
+ 
+            .new{
+                width: 100%;
+                height: auto;
+            }
+            .new> article{
+                width: 1126px;
+                height: 480px;
+                border: 1px solid orange;
+                box-sizing: border-box;
+                margin: 0 auto;           
+            }
+
+            .new>article>div{
+                border: 1px solid pink;
+                box-sizing: border-box;
+                width: 345px;
+                height: 50%;
+                float: left;
+            }
+            
+            .new>article>div:nth-child(1){
+                width: 434px;
+                height: 100%;
+                float: left;
+            }
+
+            .master{
+                height: 620px;
+            }
+
+
+            .master>article>div{
+                width: 25%;
+                height: 334px;
+                border: 1px solid pink;
+                box-sizing: border-box;
+                float: left;
+            }
+
+            .organic_banner{
+                width: 100%;
+                height: 220px;
+               
+            }
+
+            .gallary{
+                overflow: hidden;
+                width: 1126px;
+                height: auto;
+            }
+            .organic>article>div{
+                width: 25%;
+                height: 400px;
+                float: left;
+                border: 1px solid pink;
+                box-sizing: border-box;
+            }
+            .grain{
+                height: auto;
+            }
+
+            .grain_banner{
+                width: 100%;
+                height: 220px;
+               
+            }
+
+            .grain>.gallary{
+                overflow: hidden;
+                width: 1126px;
+                height: auto;
+            }
+            .grain>article>div{
+                width: 25%;
+                height: 400px;
+                float: left;
+                border: 1px solid pink;
+                box-sizing: border-box;
+            }
+            .organic{
+                height: auto;
+            }
+
+            /*푸터*/
+
+            footer{
+                width: 100%;
+                height: auto;
+                border: 1px solid blue;
+                box-sizing: border-box;
+            }
+            footer > div{
+                width: 1126px;
+                height: 210px;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin: 0 auto;
+
+            }
+         
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <section></section>
+                </div>
+                <div>
+                    <nav></nav>
+                </div>
+            </header>
+            <main>
+                <section class="banner">
+                    <article></article>
+                </section>
+                <section class="new">
+                    <article>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                    </article>
+                </section>
+                <section class="master">
+                    <article>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                    </article>
+                </section>
+                <section class="grain_banner">
+                </section>
+                <section class="grain">
+                    <article class="gallary">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                    </article>
+                </section>
+                <section class="organic_banner">
+                </section>
+                <section class="organic">
+                    <article class="gallary">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                    </article>
+                </section>
+            </main>
+            <footer>
+                <div></div>
+            </footer>
+        </div>
+    </body>
+</html>
