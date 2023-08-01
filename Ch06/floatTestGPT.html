@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+        
+        .floated-element {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 10px;
+        }
+        
+        .grid-item {
+            background-color: lightgray;
+            padding: 20px;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div class="floated-element"></div>
+        <div class="grid-item">Grid Item 1</div>
+        <div class="grid-item">Grid Item 2</div>
+    </div>
+    
+</body>
+
+
+</html>

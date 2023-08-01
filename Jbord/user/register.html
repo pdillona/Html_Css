@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jboard : : login</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+
+
+        .register > table{
+            border-collapse: collapse;
+        }
+        .register  table{
+            width: 100%;
+            border-top: 2px solid #111;
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin-bottom: 10px;
+        
+        }
+        form{
+            width: 600px; height: 147px;
+            margin: auto;
+        }
+        table{margin: auto;}
+        .register table caption{
+            padding: 10px 0;
+            font-weight: bold;
+            text-align: left;
+        }
+        .register td:nth-child(1){
+            text-align: center;
+            background-color: aliceblue;
+        }
+        #user td{
+            border: 1px solid gray;
+            box-sizing: border-box;
+            width: 30px;
+            height: 30px;
+
+        }
+        .register input{
+            height: 20px;
+            margin-left: 10px;
+            background-color: antiquewhite;
+        }
+        .register button{
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 3px;
+            border: none;
+        }
+        .register img{}
+        
+    </style>
+</head>
+<body>
+        <div id="container">
+            <header>
+                <h3>Board System v1.0</h3>
+            </header>
+            <main>
+                <section id="user" class="register">
+                    <form action="#" method="post">
+                        <table border="0">
+                            <caption>사이트 정보 입력</caption>
+                            <tbody>
+                            <tr>
+                                <td>아이디</td>
+                                <td><input type="text" placeholder="아이디 입력">
+                                       <button><img src="../images/chk_id.gif" alt="중복확인"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>비밀번호</td>
+                                <td><input type="text" placeholder="비밀번호 입력">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>비밀번호 확인</td>
+                                <td><input type="text" placeholder="비밀번호 확인 입력">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <table border="0">
+                            <caption>개인 정보 입력</caption>
+                            <tbody>
+                            <tr>
+                                <td>이름</td>
+                                <td><input type="text" placeholder="아이디 입력">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>비밀번호</td>
+                                <td><input type="text" placeholder="비밀번호 입력">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>비밀번호 확인</td>
+                                <td><input type="text" placeholder="비밀번호 확인 입력">
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>주소</td>
+                                <td><input type="text" placeholder="아이디 입력">
+                                       <button><img src="../images/chk_id.gif" alt="중복확인"></button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </section>  
+            </main>
+            <footer>
+                <p>ⓒcopyright 정영재.com</p>
+            </footer>
+        </div>
+</body>
+</html>
