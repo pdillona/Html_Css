@@ -1,5 +1,9 @@
 {
     "editor.fontFamily": "CookieRun,Consolas, 'Courier New', monospace",
+<<<<<<< HEAD
     "liveServer.settings.CustomBrowser": "chrome",
     "liveServer.settings.port": 5501
+=======
+    "liveServer.settings.CustomBrowser": "chrome"
+>>>>>>> origin/main
 }
