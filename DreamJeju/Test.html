@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="/reset.css">
+<style>
+    .bgcontainer{width:600px; height:400px; position: relative; border: 1px solid #000; margin:auto;}
+    .bgwrap{width:400%; height:100%; display: flex; margin-left: -100%;}
+    .bg{width: 100%;height: 100%;}
+    .bg01{background: burlywood;}
+    .bg02{background: blue;}
+    .bg03{background: cadetblue}
+    .bg04{background: crimson;}
+
+    .btn{position: absolute; top:50%; transform: translateY(-50%);}
+    a.prev{left: 0;}
+    a.next{right: 0;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(function(){
+        $('a.prev').click(function(){
+            $('.bgwrap').animate({'margin-left':'0'},1000,function(){
+                $('.bg').last().prependTo('.bgwrap')
+                $('.bgwrap').css({'margin-left':'-100%'})
+            })
+        })
+        $('a.next').click(function(){
+            $('.bgwrap').animate({'margin-left':'-200%'},1000,function(){
+                $('.bg').first().appendTo('.bgwrap')
+                $('.bgwrap').css({'margin-left':'-100%'})
+            })
+        })                
+    })
+</script>
+<body>
+    <div class="bgcontainer">
+        <div class="bgwrap">
+            <div class="bg bg01"></div>
+            <div class="bg bg02"></div>
+            <div class="bg bg03"></div>
+            <div class="bg bg04"></div>
+        </div>
+        <a href="#" class="prev btn"><img src="imges/icon-1.jpg" alt=""/></a>
+        <a href="#" class="next btn"><img src="imges/icon-3.jpg" alt=""/></a>
+    </div>
+</body>
+</html>

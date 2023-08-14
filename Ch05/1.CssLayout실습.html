@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>layout실습</title>
+            <!-- 
+            날짜: 2023/07/07
+            이름: 정영재
+            내용: CSS layout 실습하기  
+
+            -->
+
+        <style>
+            /* 초기화 */
+            /* 마진 패딩 0줘서 전체 적으로 마진패딩 지워줬음 */
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            ul, ol{
+                list-style: none;
+            }
+            a{
+                text-decoration: none; color: black;
+            }
+
+            #container{
+                width: 800px;
+                height: auto ;
+                background: #aaa;
+                margin:  0 auto;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            header{
+                width: 100%;
+                height: 120px;
+                background: #ccc;
+
+            }
+            main{
+                width: 100%;
+                height: 400px;
+                background: #ccc;
+                margin: 10px 0;
+            }
+            footer{
+                width: 100%;
+                height: 100px;
+                background: #ccc;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <header>
+                <h3>Header</h3>
+            </header>
+            <main>
+                <h3>Main</h3>
+            </main>
+            <footer>
+                <h3>Footer</h3>
+            </footer>
+         
+        </div>
+
+
+    </body>
+
+</html>
